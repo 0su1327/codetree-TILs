@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     // 여기에 코드를 작성해주세요.
     int num;
-    int arr[num];
+    
     scanf("%d", &num);
 
+    int *arr = (int *)malloc(num * sizeof(int));
     
     for(int i=0; i<num; i++){
         scanf("%d", &arr[i]);
